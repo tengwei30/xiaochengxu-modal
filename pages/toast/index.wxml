@@ -1,0 +1,19 @@
+
+<import src="../../components/toast.wxml"/>
+
+<!-- is="toast" 匹配组件中的toast提示  如果用dialog的话这就是dialog -->
+<template is="toast" data="{{ ...$wux.toast }}"/>
+
+<view class="page">
+    <view class="page_title">
+        <view class="page_desc" style="text-align:center">提示框</view>
+    </view>
+    <view>
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="showToast">成功提示</button>
+	        <button class="weui-btn" type="primary" bindtap="showToastCancel">取消提示</button>
+	        <button class="weui-btn" type="primary" bindtap="showToastErr">禁止提示</button>
+	        <button class="weui-btn" type="primary" bindtap="showToastText">文本提示</button>
+        </view>
+    </view>
+</view>
